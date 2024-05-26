@@ -1,0 +1,64 @@
+.home{
+background-color: darkblue;
+}
+
+.home h1{
+    font-family: "Pacifico", cursive ;
+    font-size: 60px;
+    position: relative;
+    z-index: 999;
+    color: white;
+}
+
+ .home h1::before{
+    content: "";
+    height: 20px;
+    width: 100%;
+    background-color: rgb(156, 192, 232);
+    z-index: -1;
+    position: absolute;
+    bottom: 4px;
+    transition: height 0.5s;
+}
+
+  h1:hover::before{
+   height: 45px;
+}
+
+.home .content {
+    border-top: 2px dotted rgb(156, 192, 232);
+    border-bottom: 2px dotted rgb(156, 192, 232);
+}
+
+.home .content h2{
+    font-family: "Righteous", sans-serif;
+    color: white;
+}
+
+label{
+    color: white;
+}
+
+#home .form-control:focus{
+    box-shadow: 0 0 0 3px  rgb(161, 213, 231) ;
+}
+
+#home .done{
+    background-color: rgb(156, 192, 232);
+    color: white;
+}
+#home .done:hover{
+    background-color: rgb(109, 164, 226);
+    
+}
+
+
+.table button.visit:hover{
+    background-color: blue;
+}
+.table button.update:hover{
+    background-color:yellow;
+}
+.table button.delete:hover{
+    background-color: red;
+}
